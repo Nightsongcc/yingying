@@ -33,17 +33,16 @@ public class login extends AppCompatActivity{
         bt_register = findViewById(R.id.register);
 
         sp = getSharedPreferences("login", Context.MODE_PRIVATE);
-        if(!(sp.getString("username", null).equals("") && sp.getString("password", null).equals(""))) {
-            et_username.setText(sp.getString("username", null));
-            et_password.setText(sp.getString("password", null));
-            if( et_username.getText().toString().equals("admin" )&& et_password.getText().toString().equals("123456")){
+        et_username.setText(sp.getString("username", null));
+        et_password.setText(sp.getString("password", null));
+        if( et_username.getText().toString().equals("admin" )&& et_password.getText().toString().equals("123456")){
                 Toast.makeText(this, "上次记录账号自动登录成功！", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent();
                 intent.setClass(login.this, MainActivity.class);
                 startActivity(intent);
                 finish();
-            }
         }
+
 
 
         bt_login.setOnClickListener(new View.OnClickListener() {

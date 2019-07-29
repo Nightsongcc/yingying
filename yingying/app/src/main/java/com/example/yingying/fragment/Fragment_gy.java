@@ -11,7 +11,7 @@ import android.webkit.WebViewClient;
 
 import com.example.yingying.R;
 
-public class fragment_gy extends Fragment {
+public class Fragment_gy extends Fragment {
     private View mView;
     private WebView webview;
     @Nullable

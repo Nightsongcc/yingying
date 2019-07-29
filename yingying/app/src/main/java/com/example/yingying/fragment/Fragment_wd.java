@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 
 import com.example.yingying.R;
 
-public class fragment_sy extends Fragment {
+public class Fragment_wd extends Fragment {
     private View mView;
 
     @Nullable
@@ -17,7 +17,7 @@ public class fragment_sy extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         //注意View对象的重复使用，以便节省资源
         if(mView == null) {
-            mView = inflater.inflate(R.layout.fragment_sy,container,false);
+            mView = inflater.inflate(R.layout.fragment_wd,container,false);
         }
 
         return mView;

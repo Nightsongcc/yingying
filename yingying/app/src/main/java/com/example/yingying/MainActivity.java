@@ -15,9 +15,9 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
-import com.example.yingying.fragment.fragment_gy;
-import com.example.yingying.fragment.fragment_sy;
-import com.example.yingying.fragment.fragment_wd;
+import com.example.yingying.fragment.Fragment_gy;
+import com.example.yingying.fragment.Fragment_sy;
+import com.example.yingying.fragment.Fragment_wd;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,9 +29,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private RadioButton button_2;
     private RadioButton button_3;
 
-    private fragment_sy fsy;
-    private fragment_gy fgy;
-    private fragment_wd fwd;
+    private Fragment_sy fsy;
+    private Fragment_gy fgy;
+    private Fragment_wd fwd;
     private List<Fragment> list;
     private FrameLayout frameLayout;
     private Fragment current_fragment;
@@ -45,11 +45,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             isExit = false;
         }
     };
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
+
+
     }
 
     public void initView() {
@@ -63,9 +69,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button_3 = (RadioButton) findViewById(R.id.button_3);
 
         //创建Fragment对象及集合
-        fsy = new fragment_sy();
-        fgy = new fragment_gy();
-        fwd = new fragment_wd();
+        fsy = new Fragment_sy();
+        fgy = new Fragment_gy();
+        fwd = new Fragment_wd();
 
         //将Fragment对象添加到list中
         list = new ArrayList<>();

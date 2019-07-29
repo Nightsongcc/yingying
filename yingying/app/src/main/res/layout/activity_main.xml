@@ -58,7 +58,5 @@
             android:drawableTop="@drawable/radiobutton_pic_wd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
-
-
     </RadioGroup>
 </LinearLayout>
